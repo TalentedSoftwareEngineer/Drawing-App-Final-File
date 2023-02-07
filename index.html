@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <script src="lib/p5.min.js"></script>
+    <script src="lib/p5.dom.js"></script> -->
+
+    <script src="sketch.js"></script>
+
+    <!-- add extra scripts below -->
+    <script src="toolbox.js"></script>
+    <script src="colourPalette.js"></script>
+    <script src="helperFunctions.js"></script>
+
+    <script src="freehandTool.js"></script>
+    <script src="lineToTool.js"></script>
+    <script src="sprayCanTool.js"></script>
+    <script src="mirrorDrawTool.js"></script>
+    <script src="starStamp.js"></script>
+    <script src="colourPicker.js"></script>
+    <script src="speechBubble.js"></script>
+    <script src="eraser.js"></script>
+    <script src="colourDropper.js"></script>
+    <script src="textBox.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script> -->
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  	<div class="wrapper">
+      <div class="box header">My Drawing App
+        <button id="clearButton">Clear</button>
+        <button id="saveImageButton">Save Image</button>
+      </div>
+
+      <div class="box tool-panel">
+        <div class="shape-tool">
+          <div id="tool-rectangle" class="type_shape"></div>
+          <div id="tool-circle" class="type_shape"></div>
+          <div id="tool-triangle" class="type_shape"></div>
+          <div id="tool-pencil" class="type_shape"></div>
+          <div id="tool-eraser" class="type_shape"></div>
+        </div>
+
+        <div id="colourPicker">
+          <div id="isFillOrStroke">
+            <div class="btn_fill_stroke_wrapper">
+              <div class="btn_fill_stroke" id="stroke"></div>
+              <p>color</p>
+              <p>1</p>
+            </div>
+
+            <div class="btn_fill_stroke_wrapper">
+              <div class="btn_fill_stroke" id="fill"></div>
+              <p>color</p>
+              <p>2</p>
+            </div>
+          </div>
+
+          <div class="colors">
+            <button type="button" value="#0000ff"></button>
+            <button type="button" value="#009fff"></button>
+            <button type="button" value="#0fffff"></button>
+            <button type="button" value="#bfffff"></button>
+            <button type="button" value="#000000"></button>
+            <button type="button" value="#333333"></button>
+            <button type="button" value="#666666"></button>
+            <button type="button" value="#999999"></button>
+            <button type="button" value="#ffcc66"></button>
+            <button type="button" value="#ffcc00"></button>
+            <button type="button" value="#ffff00"></button>
+            <button type="button" value="#ffff99"></button>
+            <button type="button" value="#003300"></button>
+            <button type="button" value="#555000"></button>
+            <button type="button" value="#00ff00"></button>
+            <button type="button" value="#99ff99"></button>
+            <button type="button" value="#f00000"></button>
+            <button type="button" value="#ff6600"></button>
+            <button type="button" value="#ff9933"></button>
+            <button type="button" value="#f5deb3"></button>
+            <button type="button" value="#330000"></button>
+            <button type="button" value="#663300"></button>
+            <button type="button" value="#cc6600"></button>
+            <button type="button" value="#deb887"></button>
+            <button type="button" value="#aa0fff"></button>
+            <button type="button" value="#cc66cc"></button>
+            <button type="button" value="#ff66ff"></button>
+            <button type="button" value="#ff99ff"></button>
+            <button type="button" value="#e8c4e8"></button>
+            <button type="button" value="#ffffff"></button>
+          </div>
+
+          <div id="picker_input">
+            <input id="input_color_picker" type="color">
+          </div>
+        </div>
+
+        <div class="box colourPalette"></div>
+        <div class="box options"></div>
+      </div>
+
+      <div class="box" id="sidebar"></div>
+      <div id="content">
+        <canvas id="paint-canvas"></canvas>
+      </div>
+
+      <div class="footer"></div>
+	</div>
+
+  <script src="./shapes.js"></script>
+  <script src="./index.js"></script>
+  </body>
+</html>
